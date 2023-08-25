@@ -39,8 +39,8 @@
       top: 15px;
       padding: 6px 12px;
       border-radius: 2px;
-      color: $ter-color2;
-      background: $tr-color;
+      color: $new-color2;
+      background: $trait-color;
     }
 
     // Styles au survol des cartes
@@ -86,40 +86,6 @@
       // Styles au survol du logo "coeur"
       &:hover {
         animation: coeur-animation 1.5s ease-in-out forwards;
-
-        // Animation pour le logo "coeur"
-        @keyframes coeur-animation {
-          0% {
-            opacity: 1;
-          }
-          10% {
-            opacity: 0.9;
-          }
-          30% {
-            opacity: 0.8;
-          }
-          40% {
-            opacity: 0.6;
-          }
-          59% {
-            opacity: 0.7;
-          }
-          60% {
-            stroke-width: 0;
-            opacity: 0.6;
-            fill: url(#coeur-gradient);
-          }
-          90% {
-            stroke-width: 0;
-            opacity: 0.9;
-            fill: url(#coeur-gradient);
-          }
-          100% {
-            stroke-width: 0;
-            opacity: 1;
-            fill: url(#coeur-gradient);
-          }
-        }
       }
     }
   }
