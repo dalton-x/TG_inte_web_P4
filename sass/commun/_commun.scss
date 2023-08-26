@@ -65,11 +65,22 @@ a {
  * @param {time} $delai-increment - L'incrément de délai pour chaque enfant suivant.
  */
 
- @mixin animation-affichage-plats($nombre-enfants, $delai-initial, $delai-increment) {
+@mixin animation-affichage-plats($nombre-enfants, $delai-initial, $delai-increment) {
   @for $i from 1 through $nombre-enfants {
     &:nth-of-type(#{$i}) {
       animation-delay: $delai-initial + ($i - 1) * $delai-increment;
+      @include animation-direction($i);
     }
+  }
+}
+
+@mixin animation-direction($index) {
+  @if $index % 2 == 0 {
+    // Pair : animation depuis la gauche
+    animation-name: appearance-left;
+  } @else {
+    // Impair : animation depuis la droite
+    animation-name: appearance-right;
   }
 }
 

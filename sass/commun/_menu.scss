@@ -79,18 +79,28 @@
           transition: 0.5s;
           transform: scale(0);
 
-          @keyframes appearance {
-            0% {
-              transform: scale(0);
-            }
+          // Animation des plats dans les menus
+          @include animation-affichage-plats(4, 0.5s, 0.25s);
 
+          // Keyframes pour l'animation de l'apparition depuis la droite
+          @keyframes appearance-right {
+            0% {
+              transform: translateX(100%);
+            }
             100% {
-              transform: scale(1);
+              transform: translateX(0);
             }
           }
 
-          // Mixin pour l'animation des plats dans les menus
-          @include animation-affichage-plats(4, 0.5s, 0.25s);
+          // Keyframes pour l'animation de l'apparition depuis la gauche
+          @keyframes appearance-left {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
 
           .validation {
             display: flex;
