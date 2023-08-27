@@ -1,0 +1,117 @@
+
+
+// systeme de recherche de localité
+.recherche-localite {
+  background: $recherche-bg-color;
+  position: relative;
+
+  .recherche-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
+  }
+
+  .recherche-part::before {
+    content: "";
+    position: absolute;
+    width: $mobile-max-width;
+    height: 3px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  i {
+    color: $gris;
+    padding-top: 1px;
+    padding-right: 5px;
+  }
+
+  input {
+    width: 135px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-top: 2px;
+
+    &::placeholder {
+      color: $gris;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+}
+
+// tuto du fonctionnement de l application
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 70px 0;
+
+  & h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  & .fonctionnement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+  }
+
+  & .fonctionnement-content {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 250px;
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 15px;
+    border-radius: 20px;
+    background: $body-bg-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    & .number-function {
+      position: relative;
+
+      & p {
+        position: absolute;
+        left: -43px;
+        top: -10px;
+        padding: 5px 9px;
+        border-radius: 30px;
+        background: $btn-color2;
+        color: white;
+        font-size: 0.8em;
+      }
+    }
+
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 0px 0px 15px 1px rgba(147, 86, 220, 0.6);
+    }
+
+    & p {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    & i {
+      color: $icon-color;
+      padding-right: 20px;
+    }
+
+    & .fa-store {
+      color: $icon-color2;
+    }
+  }
+}

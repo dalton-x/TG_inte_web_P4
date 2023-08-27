@@ -1,0 +1,27 @@
+// Pour le header
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  position: relative;
+
+  & img {
+    width: 160px;
+  }
+
+  & .retour {
+    position: absolute;
+    left: 25px;
+    font-size: 1.2rem;
+  }
+
+  & .fa-arrow-left {
+    color: #454545;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

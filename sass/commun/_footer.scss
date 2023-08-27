@@ -1,0 +1,44 @@
+footer {
+  background: $footer-bg-color;
+  color: white;
+
+  .footer-container {
+    padding: 25px;
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 16px;
+
+      i {
+        margin-right: 10px;
+        line-height: 1em;
+      }
+
+      a {
+        color: white;
+        padding-top: 7px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    h3 {
+      font-family: "Shrikhand";
+      font-weight: 500;
+    }
+
+    .first-part-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .second-part-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
