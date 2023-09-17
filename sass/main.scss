@@ -1,7 +1,14 @@
 @import "./commun/_variables.scss";
+@import "./commun/_loader.scss";
 @import "./commun/_commun.scss";
 @import "./commun/_header.scss";
 @import "./commun/_footer.scss";
 @import "./commun/_menu.scss";
 @import "./homepage/_home.scss";
 @import "./homepage/_restaurant";
+
+
+// Responsive
+
+@import "./responsive/_tablette.scss";
+@import "./responsive/_desktop.scss";

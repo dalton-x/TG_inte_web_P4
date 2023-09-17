@@ -1,6 +1,6 @@
 .position {
   position: absolute;
-  width: $mobile-max-width;
+  width: 100%;
   top: 270px;
 
   .menu {
@@ -39,6 +39,11 @@
             &:hover {
               animation: coeur-animation 1.5s ease-in-out forwards;
             }
+          }
+          &:active {
+            stroke-width: 0;
+            opacity: 1;
+            fill: url(#coeur-gradient);
           }
         }
       }
@@ -162,32 +167,6 @@
           }
         }
       }
-
-      // .concept {
-      //   display: block;
-      //   text-align: center;
-      //   border: unset;
-      //   width: 186px;
-      //   border-radius: 25px;
-      //   padding: 15px 25px;
-      //   font-size: 1rem;
-      //   font-weight: 500;
-      //   margin: 40px auto;
-      //   background: linear-gradient($btn-color1, $btn-color2);
-      //   cursor: pointer;
-      //   transition: 0.4s ease;
-      //   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.45);
-      //   align-self: center;
-
-      //   &:hover {
-      //     opacity: 0.8;
-      //     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
-      //   }
-
-      //   a {
-      //     color: white;
-      //   }
-      // }
     }
   }
 }
