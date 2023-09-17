@@ -7,33 +7,13 @@
   }
 
   // home
-  .fonctionnement .fonctionnement-container {
-    flex-direction: initial;
+
+  header img {
+    width: 250px;
   }
 
-  // footer
-  .footer-container{
-    display: flex;
-            flex-direction: row-reverse;
-            margin-right: 25px;
-            padding-top: 40px;
-            padding-bottom: 15px;
-
-  }
-
-  footer .footer-container .footer-content {
-    display: flex;
-    flex-direction: initial;
-    justify-content: flex-start;
-    padding-top: 16px;
-    & a {
-      margin-left: 50px;
-    }
-  }
-
-  footer .footer-container h3 {
-    padding-top: 20px;
-    padding-left: 20px;
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
   }
 
   // menu
