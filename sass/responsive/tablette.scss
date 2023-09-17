@@ -1,0 +1,28 @@
+@media screen and (min-width: $tablet-max-width) {
+
+  // _commun
+  .btn-gradient-violet h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  // home
+
+  header img {
+    width: 250px;
+  }
+
+  .fonctionnement h2, .restaurants h2 {
+    text-align: center;
+  }
+
+  // menu
+  .position {
+    position: absolute;
+    width: 80vw;
+    top: 270px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+}

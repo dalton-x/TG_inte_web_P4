@@ -40,6 +40,11 @@
               animation: coeur-animation 1.5s ease-in-out forwards;
             }
           }
+          &:active {
+            stroke-width: 0;
+            opacity: 1;
+            fill: url(#coeur-gradient);
+          }
         }
       }
     }
