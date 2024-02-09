@@ -27,6 +27,36 @@ a {
   text-transform: uppercase;
 }
 
+.message-alerte {
+  display: none;
+}
+
+@media screen and (max-width: 315px) {
+  .message-alerte {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    & i {
+      animation: rotation-mobile 1.5s ease-in-out infinite;
+    }
+    @keyframes rotation-mobile {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  main {
+    display: none;
+  }
+}
+
+
 // animation de remplissage du coeur
 @keyframes coeur-animation {
   0% {
@@ -97,22 +127,37 @@ a {
   background: $body-bg-color;
 
   & h1 {
-    font-size: 1.5em;
     margin-top: 40px;
     margin-bottom: 0;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 275px;
+    height: 68px;
+    flex-shrink: 0;
   }
 
   & p {
     color: $paragraph-color;
+    text-align: center;
+
+    /* Paragraph */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 300;
-    font-size: 1.125em;
-    margin-right: 20px;
-    margin-left: 20px;
+    line-height: normal;
+    width: 315px;
+    height: 46px;
+    flex-shrink: 0;
   }
 
   & a {
     border: unset;
-    border-radius: 25px;
     text-decoration: none;
     padding: 15px 25px;
     font-size: 1rem;
@@ -120,10 +165,11 @@ a {
     color: white;
     margin-top: 10px;
     margin-bottom: 60px;
-    background: linear-gradient($btn-color1, $btn-color2);
     cursor: pointer;
     transition: 0.4s ease;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
+    background: linear-gradient(360deg, $btn-color1 -28.44%, $btn-color2 85.93%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
     &:hover {
       opacity: 0.8;
