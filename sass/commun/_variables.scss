@@ -1,7 +1,7 @@
 $body-bg-color: #F6F6F6;
 
-$btn-color1: #FF79DA;
-$btn-color2: rgb(147, 86, 220);
+$btn-color1: #9356DC;
+$btn-color2: #FF79DA;
 
 $trait-color: #99e2D0;
 $new-color2: #008766;
@@ -22,14 +22,11 @@ $prix-width: 28px;
 $validation-width: 59px;
 // Dimension responsive //
 
-// Mobile
-$mobile-max-width : 375px;
-
 // Tablette
-$tablet-max-width : 580px;
+$tablet-min-width : 580px;
 
 // desktop
-$desktop-max-width : 1500px;
+$desktop-min-width : 1440px;
 
 // Dimension responsive //
 
