@@ -31,6 +31,8 @@ a {
   display: none;
 }
 
+
+// Ajout un message si la resolution est trop petite
 @media screen and (max-width: 315px) {
   .message-alerte {
     display: block;
@@ -53,6 +55,21 @@ a {
   }
   main {
     display: none;
+  }
+
+  // Met le footer en bas de la page 
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  footer {
+    margin-top: auto;
   }
 }
 
